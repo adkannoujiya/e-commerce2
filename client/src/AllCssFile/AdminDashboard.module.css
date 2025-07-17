@@ -1,0 +1,26 @@
+.adminCard {
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5rem;
+  border: 2px solid #ff9800;
+  border-radius: 16px;
+  background: linear-gradient(to right, #ffa726, #fb8c00);
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.adminCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.adminCard h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.adminCard h3 span {
+  font-weight: normal;
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,114 @@
+
+
+
+.Logo{
+    height: 50px;
+    width: 200px;
+}
+
+
+
+
+
+
+.navbar {
+  background: linear-gradient(90deg, #ffffff, #fff3e0, #ffe0b2);
+  padding: 12px 24px;
+  box-shadow: 0 2px 6px rgba(255, 165, 0, 0.2);
+  color: #333;
+}
+
+
+
+
+/* hamberger */
+
+.customToggler {
+  border: none;
+  background-color: transparent;
+  padding: 6px 10px;
+  box-shadow: none;
+}
+
+/* Remove all borders/shadows on interaction */
+.customToggler:hover,
+.customToggler:focus,
+.customToggler:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* Central line */
+.HamIcon {
+  display: inline-block;
+  position: relative;
+  width: 28px;
+  height: 4px;
+  background-color: #222; /* dark black */
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Top & bottom lines */
+.HamIcon::before,
+.HamIcon::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  background-color: #222;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.HamIcon::before {
+  top: -10px;
+}
+
+.HamIcon::after {
+  top: 10px;
+}
+
+/* Turn into 'X' on open */
+.customToggler.open .HamIcon {
+  background-color: transparent;
+}
+
+.customToggler.close{
+  background-color: white;
+}
+
+.customToggler.open .HamIcon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.customToggler.open .HamIcon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* media query */
+
+@media (max-width: 600px) {
+
+
+.Logo{
+    height: 30px;
+    width: 120px;
+    margin-right: 100px;
+}
+
+.LogoContainer {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 10;
+}
+
+.Logo {
+  max-width: 130px;
+  height: auto;
+}
+}

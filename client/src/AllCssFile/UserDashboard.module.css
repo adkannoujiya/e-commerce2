@@ -1,0 +1,18 @@
+.dashboardCard {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #cdad85, #886a3b, #d88c19);
+  color: white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.dashboardCard h3 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}

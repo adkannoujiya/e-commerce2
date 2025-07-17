@@ -1,0 +1,88 @@
+
+.herodiv{
+    margin-top: 10px;
+    height: 367px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 5px;
+    overflow: hidden;
+ 
+}
+
+/* /heroImage ________________________________________________*/
+.heroImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+/* left buton */
+
+
+
+.heroContainer {
+  width: 100%;
+  height: 100%;
+  position: relative; /* if needed */
+  z-index: 1; /* just in case */
+}
+
+/* Common styles for both buttons */
+.leftButton,
+.rightButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* Align left */
+.leftButton {
+  left: 10px;
+
+}
+
+/* Align right */
+.rightButton {
+  right: 10px;
+}
+
+.leftButton button,
+.rightButton button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.leftButton button:hover,
+.rightButton button:hover {
+  background-color: rgba(255, 140, 0, 0.8);
+}
+
+
+/* slid image */
+
+
+@media (max-width: 600px) {
+  .herodiv{
+  
+    height: 10vh;
+    width: 100%;
+  }
+
+  .heroImage{
+   max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+}

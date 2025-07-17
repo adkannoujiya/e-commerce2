@@ -1,0 +1,67 @@
+.loginPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 30px;
+}
+
+.form {
+ background: linear-gradient(90deg, #8b765d, #876b3f, #d49332);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ff9800;
+  box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+}
+
+.button {
+  padding: 12px;
+  background: linear-gradient(to right, #ff9800, #fb8c00);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #fb8c00, #f57c00);
+}
+
+.linkButton {
+  background: none;
+  color: #ff6f00;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.95rem;
+  padding-top: 5px;
+}

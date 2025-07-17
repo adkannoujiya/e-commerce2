@@ -1,0 +1,41 @@
+.adminMenu {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menuItem {
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.menuItem:hover {
+  background: linear-gradient(to right, #e6c088, #fb8c00);
+  color: white;
+}
+
+.active {
+  background: linear-gradient(to right, #fba626, #917655);
+  color: white;
+  font-weight: 600;
+}
